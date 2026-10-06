@@ -1,0 +1,171 @@
+/* Reseta margens e define o modelo de caixa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    /* CORPO DO TEXTO: Google Font Sans-serif (Inter) */
+    font-family: 'Inter', sans-serif;
+    
+    /* 1ª COR (FORMATO RGB): Fundo cinza-azulado suave */
+    background-color: rgb(244, 246, 249);
+    
+    /* 2ª COR (FORMATO HEX): Cor padrão do texto do artigo */
+    color: #2b3748;
+    
+    /* REQUISITO: Altura de linha confortável (1.7 está entre 1.6 e 1.8) */
+    line-height: 1.7;
+    
+    padding: 3rem 1rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Centraliza o artigo na tela */
+.article-wrapper {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+/* Caixa principal do artigo */
+.blog-post {
+    background-color: #ffffff;
+    padding: 3.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+/* Cabeçalho do artigo e metadados */
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* 3ª COR (FORMATO HSL): Tag estilizada usando Matiz, Saturação e Luminosidade */
+.badge-hsl {
+    background-color: hsl(221, 83%, 95%);
+    color: hsl(221, 83%, 45%);
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.post-date {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* HIERARQUIA DE HEADINGS: Todos usando Google Font Serif (Playfair Display) */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a202c;
+    font-weight: 700;
+}
+
+.post-title {
+    font-size: 2.3rem;
+    line-height: 1.25;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+}
+
+/* Parágrafo de introdução */
+.post-lead {
+    font-size: 1.15rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Bloco do autor */
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f1f5f9;
+    margin-bottom: 2.5rem;
+}
+
+.author-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.author-info h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #1e293b;
+}
+
+.author-info p {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* Conteúdo do texto e espaçamentos */
+.post-content p {
+    margin-bottom: 1.5rem;
+    color: #334155;
+    /* REQUISITO: Linha-altura confortável nos parágrafos do corpo */
+    line-height: 1.8;
+}
+
+.post-content h2 {
+    font-size: 1.65rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.post-content h3 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Citação destacada (Blockquote) */
+blockquote {
+    border-left: 4px solid #2563eb;
+    margin: 2rem 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #1e293b;
+    background-color: #f8fafc;
+    padding: 1.2rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Rodapé do artigo */
+.post-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.tags span {
+    color: #2563eb;
+    background: #f1f5f9;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-right: 0.4rem;
+}
+
+/* Responsividade mobile */
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 1.5rem;
+    }
+    .post-title {
+        font-size: 1.75rem;
+    }
+}
